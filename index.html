@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Invitation 💌</title>
+
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Parisienne&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+  <link rel="icon" type="text/css" href="favicon.ico">
+
+
+</head>
+<body>
+  <!-- FLORAL BORDER ANIMATION -->
+  <div class="floral-border">
+    <div class="flower f1">🌸</div>
+    <div class="flower f2">🌷</div>
+    <div class="flower f3">💐</div>
+    <div class="flower f4">🌼</div>
+    <div class="flower f5">🌺</div>
+    <div class="flower f6">🌹</div>
+  </div>
+
+
+
+<section id="landing" class="section-landing fade-in">
+  <!-- Add emoji wrapper -->
+  <div class="heading-wrapper">
+    <h1>2nd Anniversary</h1>
+
+    <!-- EMOJIS FLOATING AROUND -->
+    <div class="emoji float-emoji-1">🌸</div>
+    <div class="emoji float-emoji-2">💞</div>
+    <div class="emoji float-emoji-3">✨</div>
+    <div class="emoji float-emoji-4">🌷</div>
+    <div class="emoji float-emoji-5">💕</div>
+  </div>
+
+  <p class="names">
+    <span class="date-pill">♡ January 3, 2026 ♡</span>
+  </p>
+
+</section>
+
+<!-- ENVELOPE SECTION (hidden until countdown ends) -->
+<div id="envelopeSection" class="hidden fade-in">
+  <div class="envlope-wrapper">
+    <div id="envelope" class="close">
+      <div class="front flap"></div>
+      <div class="front pocket"></div>
+      <div class="letter">
+        <div class="words line1">To: Bebi 💗</div>
+        <div class="words line2">Happy 2nd Anniversary, Bebi!</div>
+        <div class="words line3">I love you!</div>
+        <div class="words line4">Can you be my anibobebi?</div>
+      </div>
+      <div class="hearts">
+        <div class="heart a1"></div>
+        <div class="heart a2"></div>
+        <div class="heart a3"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="reset">
+    <button id="open">Open</button>
+    <button id="reset">OPKORS! (No Other Option)</button>
+  </div>
+  <div class="divider"></div>
+</div>
+
+<!-- MUSIC PLAYER -->
+<div class="music-player">
+  <img src="images/bgp2.jpg" alt="Us" class="cover-art" />
+  <div class="song-info">
+    <h4>DIVE</h4>
+    <p>Olivia Dean</p>
+  </div>
+  <div class="controls">
+    <button id="playPause">
+      <span id="playIcon">▶️</span>
+      <span id="pauseIcon" style="display:none;">⏸️</span>
+    </button>
+  </div>
+</div>
+
+<div class="divider"></div>
+
+<section id="countdown" class="fade-in">
+  <h2>⏳ Countdown to January 3, 2026</h2>
+  <div id="timer"></div>
+</section>
+
+
+<footer>
+  <p>Made with wab 💗  Dudu</p>
+</footer>
+
+<audio id="bgMusic" loop>
+  <source src="audio/bgm2.mp3" type="audio/mpeg">
+</audio>
+
+<script src="envelope.js"></script>
+</body>
+</html>
